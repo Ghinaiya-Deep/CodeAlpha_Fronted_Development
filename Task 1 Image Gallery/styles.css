@@ -1,0 +1,252 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* H1 Styles */
+.gallery-container h1 {
+    font-size: 36px;
+    color: #2c3e50; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-family: 'Arial', sans-serif; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    border-bottom: 2px solid #2c3e50; 
+    padding-bottom: 10px; 
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333; 
+    color: white; 
+    padding: 15px; 
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.navbar-brand {
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+.navbar-menu {
+    list-style: none; 
+    display: flex;
+    margin: 0; 
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-left: 20px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.navbar-menu a:hover {
+    color: #ff6347; 
+}
+
+
+/* Gallery Container Styling */
+.gallery-container {
+    text-align: center;
+    padding: 40px 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    flex-grow: 1;
+    
+}
+
+.gallery {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin: 0 -10px; 
+}
+
+.gallery img {
+    width: calc(33.33% - 20px); 
+    margin: 10px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #2c3e50;
+    height: 200px;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* About Us Section Styles */
+.about-container {
+    background-color: #f9f9f9; 
+    padding: 40px 50px; 
+    border-radius: 10px; 
+    border: 2px solid #2c3e50;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 40px 50px; 
+}
+
+.about-container h2 {
+    font-size: 24px; 
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+.about-container p {
+    font-size: 17px;
+    color: #555; 
+    line-height: 1.6;
+}
+
+/* Contact Us Section Styles */
+.contact-container {
+    max-width: 100%; 
+     margin: 10px 50px ; 
+    padding: 40px 50px;  
+    border: 2px solid #2c3e50; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    text-align: center; 
+    color: #2c3e50; 
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.form-group {
+    margin-bottom: 20px; 
+}
+
+label {
+    font-weight: bold; 
+    margin-bottom: 5px; 
+    display: block; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    font-size: 16px; 
+}
+
+textarea {
+    resize: vertical; 
+}
+
+button {
+    background-color: #ff6347; 
+    color: white; 
+    border: none; 
+    padding: 15px 20px; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e5533d; 
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #222; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    position: relative;
+    bottom: 0;
+    width: 100%; 
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer a {
+    color: blue; 
+    text-decoration: none; 
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+/* Modal Content */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px; 
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white; 
+    font-size: 40px; 
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb; 
+    text-decoration: none;
+    cursor: pointer;
+}
